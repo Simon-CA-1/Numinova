@@ -69,7 +69,8 @@ def main():
         n_estimators=200,
         max_depth=10,
         min_samples_split=4,
-        random_state=42
+        random_state=42,
+        class_weight='balanced'
     )
     model.fit(X_train, y_train)
 
