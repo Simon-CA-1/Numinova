@@ -1,5 +1,6 @@
 🏭 Preventing Industrial Disasters using IoT and Machine Learning
 A Real-Time Predictive Equipment Monitoring System
+
 📖 Overview
 
 This project aims to prevent industrial disasters — such as gas leaks, equipment explosions, or chemical spills — through real-time machine monitoring and predictive maintenance.
