@@ -106,3 +106,27 @@ The project proposes a **Proactive Equipment Monitoring System** that:
 ---
 
 ### 🏁 _“We can’t rewrite history — but we can make sure it never repeats itself.”_
+
+## Running commands (PowerShell)
+
+Copy and run these commands in Windows PowerShell from the repository root:
+
+```powershell
+# create and activate virtual environment (PowerShell)
+python -m venv .venv; .\.venv\Scripts\Activate.ps1
+
+# install dependencies
+pip install -r requirements.txt
+
+# Train model
+python .\model\train.py
+
+# Run simulator
+python .\model\simulate.py
+
+# Start the dashboard (if the script runs via python)
+python .\model\dash.py
+
+# If the dashboard uses Streamlit, try:
+streamlit run .\model\dash.py
+```
