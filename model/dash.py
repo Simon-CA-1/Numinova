@@ -202,22 +202,22 @@ if st.button("▶ Start Monitoring", key="start_monitoring"):
         temp_chart.plotly_chart(
             px.line(gd, x="Timestamp", y="Temperature", title="Temperature Over Time (°C)",
                     labels={"Timestamp": "Time", "Temperature": "°C"}, markers=True),
-            use_container_width=True
+            width="stretch"
         )
         press_chart.plotly_chart(
             px.line(gd, x="Timestamp", y="Pressure", title="Pressure Over Time (bar)",
                     labels={"Timestamp": "Time", "Pressure": "bar"}, markers=True),
-            use_container_width=True
+            width="stretch"
         )
         vib_chart.plotly_chart(
             px.line(gd, x="Timestamp", y="Vibration", title="Vibration Level Over Time",
                     labels={"Timestamp": "Time", "Vibration": "Level"}, markers=True),
-            use_container_width=True
+            width="stretch"
         )
         risk_chart.plotly_chart(
             px.line(gd, x="Timestamp", y="Risk", title="Predicted Failure Risk Over Time",
                     labels={"Timestamp": "Time", "Risk": "Failure Probability"}, markers=True),
-            use_container_width=True
+            width="stretch"
         )
 
         time.sleep(speed)
